@@ -40,6 +40,7 @@ html::-webkit-scrollbar-thumb {
     top: 0;
     left: 0;
     width: 100%;
+    height: 45px;
     padding: 3rem 9%;
     background: rgba(0, 0, 0, 0.7);
     filter: drop-shadow(10px);
@@ -138,15 +139,16 @@ span {
 }
 .home-img img {
     position: relative;
-    width: 32vw;
-    height: 32vw;
+    width: 25vw;
+    height: 25vw;
     object-fit: cover;
     border-radius:  50%;
     box-shadow: 0 0 25px var(--main-color);
+    transition: transform 400ms;
     cursor: pointer;
 }
 .home-img img:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
     filter: drop-shadow(0 0 25px var(--main-color));
 }
 .home-content p{
@@ -209,7 +211,7 @@ span {
     content: '';
     position: absolute;
     right: 0;
-    width: 156%;
+    width: 100%;
     height: 100%;
     border-left: 3px solid var(--bg-color);
     background: var(--bg-color);
@@ -223,19 +225,19 @@ span {
 }
 @keyframes words {
     0%, 20% {
-        content: 'Web Developer';
+        content: 'IT Support';
     }
     21%, 40% {
-        content: 'Software Developer';
+        content: 'IOS Developer';
     }
     41%, 60% {
-        content: 'Web Designer';
+        content: 'Cyber Security';
     }
     61%, 80% {
-        content: 'Photographer';
+        content: '3D Artist';
     }
     81%, 100% {
-        content: 'Youtuber';
+        content: 'Content Creator';
     }
 }
 @keyframes typing {
